@@ -3,211 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Despensa del Cuco – Tienda Gourmet Online</title>
+<title>La Despensa del Cuco – Gourmet Online</title>
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8f5f0;
-    color: #333;
+body { margin:0; font-family:Arial, sans-serif; background:#f5efe6; color:#4a2c2a; }
+header { background:#5c1e1e; color:white; padding:50px 20px; text-align:center; }
+header h1 { margin:0; font-size:46px; font-weight:bold; }
+nav { background:#7a2c2c; padding:10px; text-align:center; }
+nav a { color:white; padding:10px 18px; text-decoration:none; font-weight:bold; }
+nav a:hover { background:#5c1e1e; }
+.section { padding:40px 20px; max-width:1200px; margin:auto; }
+.section h2 { text-align:center; font-size:32px; margin-bottom:25px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:25px; }
+.card {
+background:white; padding:20px; border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
 }
-/* ENCABEZADO */
-header {
-    background: url('[images.unsplash.com](https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1500&q=80)') center/cover;
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
+.card img {
+width:100%; height:240px; object-fit:cover;
+background:#f3e9d7; border-radius:8px;
 }
-header h1 {
-    margin: 0;
-    font-size: 45px;
-    text-shadow: 2px 2px 5px #000;
+.card h3 { margin:15px 0 10px; font-size:20px; }
+.card p { font-size:15px; line-height:1.5; }
+.price { font-size:18px; font-weight:bold; color:#7a2c2c; margin:10px 0; }
+.btn {
+display:inline-block;
+padding:10px 18px;
+margin-top:12px;
+background:#7a2c2c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
 }
-header p {
-    margin-top: 10px;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px #000;
-}
-/* MENÚ */
-nav {
-    background: #5e0a0a;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-nav a:hover {
-    background: #7a0c0c;
-}
-/* SECCIONES */
-.section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-.section h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #5e0a0a;
-    font-size: 28px;
-}
-.section p {
-    font-size: 17px;
-    line-height: 1.7;
-}
-/* CATÁLOGO */
-.product-list {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    line-height: 1.8;
-    box-shadow: 0 0 10px #ccc;
-    font-size: 17px;
-}
-.price {
-    float: right;
-    font-weight: bold;
-    color: #7a0c0c;
-}
-/* BOTÓN COMPRA */
-.buy-btn {
-    display: block;
-    background: #7a0c0c;
-    color: white;
-    padding: 14px;
-    margin: 25px auto;
-    width: 260px;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.buy-btn:hover {
-    background: #5e0a0a;
-}
-/* WHATSAPP */
-.whatsapp-btn {
-    display: block;
-    background: #25D366;
-    color: white;
-    padding: 16px;
-    margin: 30px auto;
-    width: 260px;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-/* REDES */
-.social {
-    margin-top: 25px;
-    text-align: center;
-}
-.social a {
-    color: #5e0a0a;
-    margin: 0 12px;
-    font-size: 20px;
-    text-decoration: none;
-}
-.social a:hover {
-    text-decoration: underline;
-}
-/* PIE */
+.btn:hover { background:#5c1e1e; }
 footer {
-    margin-top: 40px;
-    padding: 25px;
-    text-align: center;
-    background: #5e0a0a;
-    color: white;
-    font-size: 16px;
+background:#5c1e1e; color:white;
+text-align:center; padding:20px; margin-top:40px;
 }
 </style>
 </head>
 <body>
 <header>
-    <h1>La Despensa del Cuco</h1>
-    <p>Tienda Gourmet Online · Productos Artesanos</p>
+<h1>La Despensa del Cuco</h1>
+<p>Tienda Gourmet Online</p>
 </header>
 <nav>
-    <a href="#historia">Sobre Nosotros</a>
-    <a href="#catalogo">Productos</a>
-    <a href="#precios">Tarifas</a>
-    <a href="#contacto">Contacto</a>
+<a href="#pates">Patés</a>
+<a href="#quesos">Untables</a>
+<a href="#mermeladas">Mermeladas</a>
+<a href="#dulces">Dulces</a>
+<a href="#licores">Licores</a>
+<a href="#packs">Packs</a>
 </nav>
-<section id="historia" class="section">
-    <h2>Sobre Nosotros</h2>
-    <p>
-        En <strong>La Despensa del Cuco</strong> seleccionamos productos gourmet artesanales elaborados con ingredientes
-        naturales y recetas tradicionales. Nuestra tienda online ofrece una experiencia cuidada y directa, llevando
-        sabores auténticos a tu hogar.
-    </p>
-    <p>
-        Patés gourmet, untables de queso, mermeladas artesanas, dulces tradicionales y licores únicos.  
-        Calidad, sabor y tradición en cada producto.
-    </p>
+<section id="pates" class="section">
+<h2>Patés Gourmet</h2>
+<div class="grid">
+<div class="card">
+<img src="img/pate-iberico-pimenton.jpg">
+<h3>Paté Ibérico al Pimentón de la Vera</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Paté%20Ibérico%20al%20Pimentón)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pate-morcilla-pinones.jpg">
+<h3>Paté de Morcilla con Piñones</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pat%C3%A9%20Morcilla%20con%20Pi%C3%B1ones)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pate-jabali-setas.jpg">
+<h3>Paté de Jabalí con Setas</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pat%C3%A9%20Jabal%C3%AD%20con%20Setas)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pate-cereza.jpg">
+<h3>Paté Ibérico a la Cereza</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pat%C3%A9%20Ib%C3%A9rico%20a%20la%20Cereza)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/patatera-miel.jpg">
+<h3>Crema de Patatera con Miel</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Patatera%20con%20Miel)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pate-pedro-ximenez.jpg">
+<h3>Paté al Pedro Ximénez</h3>
+<div class="price">3,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pat%C3%A9%20Pedro%20Xim%C3%A9nez)">Comprar</a>
+</div>
+</div>
 </section>
-<section id="catalogo" class="section">
-    <h2>Catálogo de Productos</h2>
-    <div class="product-list">
-        <h3>Patés y Untables Gourmet</h3>
-        Paté ibérico al pimentón de la Vera <span class="price">3,50 €</span><br>
-        Paté de morcilla con piñones <span class="price">3,50 €</span><br>
-        Paté de jabalí con setas <span class="price">3,50 €</span><br>
-        Paté ibérico a la cereza <span class="price">3,50 €</span><br>
-        Crema de patatera con miel <span class="price">3,50 €</span><br>
-        Paté al Pedro Ximénez <span class="price">3,50 €</span><br>
-        <br><h3>Untables de Queso</h3>
-        Crema de oveja con boletus <span class="price">4,20 €</span><br>
-        Crema de cabra con miel <span class="price">4,20 €</span><br>
-        Crema de queso azul con cebolla caramelizada <span class="price">4,20 €</span><br>
-        <br><h3>Mermeladas Gourmet</h3>
-        Mermelada con pimentón de la Vera <span class="price">5,50 €</span><br>
-        Mermelada extra de cereza <span class="price">5,50 €</span><br>
-        Mermelada extra de frambuesa <span class="price">5,50 €</span><br>
-        Mermelada extra de arándano <span class="price">5,50 €</span><br>
-        Mermelada cereza picota – Edición especial <span class="price">6,95 €</span><br>
-        <br><h3>Dulces Tradicionales</h3>
-        Huesillos caseros <span class="price">4,95 €</span><br>
-        Pastas artesanas con guinda <span class="price">5,50 €</span><br>
-        Perrunillas artesanas <span class="price">6,95 €</span><br>
-        Cañas de azúcar <span class="price">7,50 €</span><br>
-        <br><h3>Packs Gourmet</h3>
-        Pack Cereza Gourmet <span class="price">8,50 €</span><br>
-        Pack Arándano y Cabra con Miel <span class="price">9,20 €</span><br>
-        Pack Degustación Frambuesa <span class="price">12,70 €</span><br>
-        Pack Selección del Monte <span class="price">14,15 €</span><br>
-        <br><h3>Licores</h3>
-        Licor natural de cereza <span class="price">9,50 €</span><br>
-        Kirsch – Aguardiente de cereza <span class="price">11,00 €</span><br>
-        Pack Cereza licor + mermelada <span class="price">14,50 €</span><br>
-        Pack Cereza Gourmet licor + mermelada + paté <span class="price">18,00 €</span><br>
-    </div>
-    <a class="buy-btn" href="[wa.me](https://wa.me/34615411700?text=Hola,%20quiero%20realizar%20un%20pedido)">Comprar por Bizum / WhatsApp</a>
+<section id="quesos" class="section">
+<h2>Untables de Queso</h2>
+<div class="grid">
+<div class="card">
+<img src="img/queso-oveja-boletus.jpg">
+<h3>Crema de Queso de Oveja con Boletus</h3>
+<div class="price">4,20 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Queso%20Oveja%20Boletus)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/queso-cabra-miel.jpg">
+<h3>Crema de Queso de Cabra con Miel</h3>
+<div class="price">4,20 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Queso%20Cabra%20Miel)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/queso-azul-cebolla.jpg">
+<h3>Crema de Queso Azul con Cebolla Caramelizada</h3>
+<div class="price">4,20 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Queso%20Azul%20Cebolla)">Comprar</a>
+</div>
+</div>
 </section>
-<section id="precios" class="section">
-    <h2>Tarifas</h2>
-    <div class="product-list">
-        <p>Consulta aquí todos los precios actualizados de nuestros productos.</p>
-    </div>
+<section id="mermeladas" class="section">
+<h2>Mermeladas Gourmet</h2>
+<div class="grid">
+<div class="card">
+<img src="img/mermelada-pimenton.jpg">
+<h3>Mermelada con Pimentón de la Vera</h3>
+<div class="price">5,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Mermelada%20Piment%C3%B3n)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/mermelada-cereza.jpg">
+<h3>Mermelada Extra de Cereza</h3>
+<div class="price">5,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Mermelada%20Cereza)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/mermelada-frambuesa.jpg">
+<h3>Mermelada Extra de Frambuesa</h3>
+<div class="price">5,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Mermelada%20Frambuesa)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/mermelada-arandano.jpg">
+<h3>Mermelada Extra de Arándano</h3>
+<div class="price">5,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Mermelada%20Ar%C3%A1ndano)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/mermelada-picota.jpg">
+<h3>Mermelada Extra de Cereza Picota</h3>
+<div class="price">6,95 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Mermelada%20Picota)">Comprar</a>
+</div>
+</div>
 </section>
-<section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>Atención al cliente y pedidos online.</p>
-    <a class="whatsapp-btn" href="[wa.me](https://wa.me/34615411700)">📱 Contactar por WhatsApp</a>
-    <div class="social">
-        <a href="[instagram.com](https://www.instagram.com/ladespensadelcuco/)" target="_blank">📷 Instagram</a>
-        <a href="[facebook.com](https://www.facebook.com/professional_dashboard/status/)" target="_blank">👥 Facebook</a>
-    </div>
+<section id="dulces" class="section">
+<h2>Dulces Tradicionales</h2>
+<div class="grid">
+<div class="card">
+<img src="img/huesillos.jpg">
+<h3>Huesillos Caseros</h3>
+<div class="price">4,95 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Huesillos)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pastas-guinda.jpg">
+<h3>Pastas Artesanas con Guinda</h3>
+<div class="price">5,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pastas%20Guinda)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/canas-azucar.jpg">
+<h3>Cañas de Azúcar</h3>
+<div class="price">7,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Cañas%20de%20Az%C3%BAcar)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/perrunillas.jpg">
+<h3>Perrunillas Artesanas</h3>
+<div class="price">6,95 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Perrunillas)">Comprar</a>
+</div>
+</div>
+</section>
+<section id="licores" class="section">
+<h2>Licores del Valle del Jerte</h2>
+<div class="grid">
+<div class="card">
+<img src="img/licor-cereza.jpg">
+<h3>Licor Natural de Cereza</h3>
+<div class="price">9,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Licor%20Cereza)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/kirsch.jpg">
+<h3>Kirsch – Aguardiente de Cereza</h3>
+<div class="price">11,00 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Kirsch)">Comprar</a>
+</div>
+</div>
+</section>
+<section id="packs" class="section">
+<h2>Packs Gourmet</h2>
+<div class="grid">
+<div class="card">
+<img src="img/pack-arandano-cabra.jpg">
+<h3>Pack Arándano y Cabra con Miel</h3>
+<div class="price">9,20 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pack%20Ar%C3%A1ndano%20Cabra)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pack-cereza.jpg">
+<h3>Pack Cereza Gourmet</h3>
+<div class="price">8,50 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pack%20Cereza)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pack-frambuesa.jpg">
+<h3>Pack Degustación Frambuesa</h3>
+<div class="price">12,70 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pack%20Frambuesa)">Comprar</a>
+</div>
+<div class="card">
+<img src="img/pack-monte.jpg">
+<h3>Pack Selección del Monte</h3>
+<div class="price">14,15 €</div>
+<a class="btn" href="[wa.me](https://wa.me/34615411700?text=Quiero%20Pack%20Monte)">Comprar</a>
+</div>
+</div>
 </section>
 <footer>
-    © La Despensa del Cuco · Tienda Gourmet Online
+© La Despensa del Cuco – Tienda Gourmet Online
 </footer>
 </body>
 </html>
