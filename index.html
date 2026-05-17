@@ -3,122 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Despensa del Cuco – Productos Gourmet</title>
+<title>La Despensa del Cuco – Tienda Gourmet Online</title>
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #faf7f2;
+    background: #f8f5f0;
     color: #333;
 }
+/* ENCABEZADO */
 header {
-    background: #7a0c0c;
-    padding: 20px;
+    background: url('[images.unsplash.com](https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1500&q=80)') center/cover;
+    padding: 80px 20px;
     text-align: center;
     color: white;
 }
 header h1 {
     margin: 0;
-    font-size: 28px;
-    letter-spacing: 1px;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px #000;
 }
+header p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+/* MENÚ */
 nav {
-    background: #500808;
+    background: #5e0a0a;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 nav a {
     color: white;
-    padding: 12px 18px;
+    padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
 }
 nav a:hover {
     background: #7a0c0c;
 }
+/* SECCIONES */
 .section {
-    padding: 35px 20px;
-    max-width: 900px;
+    padding: 40px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 .section h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #500808;
+    margin-bottom: 25px;
+    color: #5e0a0a;
+    font-size: 28px;
 }
+.section p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+/* CATÁLOGO */
 .product-list {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     line-height: 1.8;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 17px;
 }
 .price {
     float: right;
     font-weight: bold;
     color: #7a0c0c;
 }
+/* BOTÓN COMPRA */
 .buy-btn {
-    display: inline-block;
+    display: block;
     background: #7a0c0c;
     color: white;
-    padding: 12px 20px;
-    margin-top: 10px;
-    border-radius: 8px;
+    padding: 14px;
+    margin: 25px auto;
+    width: 260px;
+    text-align: center;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
 }
-.buy-btn:hover { background: #500808; }
+.buy-btn:hover {
+    background: #5e0a0a;
+}
+/* WHATSAPP */
 .whatsapp-btn {
     display: block;
     background: #25D366;
     color: white;
-    padding: 14px;
-    margin: 25px auto;
-    width: 220px;
+    padding: 16px;
+    margin: 30px auto;
+    width: 260px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
 }
-footer {
-    margin-top: 40px;
-    padding: 20px;
+/* REDES */
+.social {
+    margin-top: 25px;
     text-align: center;
-    background: #500808;
-    color: white;
 }
 .social a {
+    color: #5e0a0a;
+    margin: 0 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.social a:hover {
+    text-decoration: underline;
+}
+/* PIE */
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    text-align: center;
+    background: #5e0a0a;
     color: white;
-    margin: 0 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 </style>
 </head>
 <body>
 <header>
     <h1>La Despensa del Cuco</h1>
-    <p>Productos Gourmet Artesanos</p>
+    <p>Tienda Gourmet Online · Productos Artesanos</p>
 </header>
 <nav>
-    <a href="#historia">Historia</a>
+    <a href="#historia">Sobre Nosotros</a>
     <a href="#catalogo">Productos</a>
     <a href="#precios">Tarifas</a>
     <a href="#contacto">Contacto</a>
 </nav>
 <section id="historia" class="section">
-    <h2>Nuestra Historia</h2>
+    <h2>Sobre Nosotros</h2>
     <p>
-        En <strong>La Despensa del Cuco</strong> trabajamos para ofrecer productos gourmet artesanales elaborados con 
-        ingredientes seleccionados y recetas tradicionales. Nuestro objetivo es poner al alcance de todos los sabores 
-        auténticos de nuestra tierra.
+        En <strong>La Despensa del Cuco</strong> seleccionamos productos gourmet artesanales elaborados con ingredientes
+        naturales y recetas tradicionales. Nuestra tienda online ofrece una experiencia cuidada y directa, llevando
+        sabores auténticos a tu hogar.
     </p>
     <p>
-        Patés artesanos, mermeladas gourmet, untables de queso, dulces tradicionales y licores con personalidad propia.  
-        Cuidamos cada detalle para que nuestros clientes disfruten de una experiencia única en cada compra.
+        Patés gourmet, untables de queso, mermeladas artesanas, dulces tradicionales y licores únicos.  
+        Calidad, sabor y tradición en cada producto.
     </p>
 </section>
 <section id="catalogo" class="section">
@@ -157,12 +189,12 @@ footer {
         Pack Cereza licor + mermelada <span class="price">14,50 €</span><br>
         Pack Cereza Gourmet licor + mermelada + paté <span class="price">18,00 €</span><br>
     </div>
-    <a class="buy-btn" href="[wa.me](https://wa.me/34615411700?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20productos%20gourmet)">Comprar por Bizum / WhatsApp</a>
+    <a class="buy-btn" href="[wa.me](https://wa.me/34615411700?text=Hola,%20quiero%20realizar%20un%20pedido)">Comprar por Bizum / WhatsApp</a>
 </section>
 <section id="precios" class="section">
     <h2>Tarifas</h2>
     <div class="product-list">
-        <p>Consulta todos los precios actualizados por categoría en nuestro catálogo.</p>
+        <p>Consulta aquí todos los precios actualizados de nuestros productos.</p>
     </div>
 </section>
 <section id="contacto" class="section">
@@ -175,7 +207,7 @@ footer {
     </div>
 </section>
 <footer>
-    © La Despensa del Cuco · Productos Gourmet
+    © La Despensa del Cuco · Tienda Gourmet Online
 </footer>
 </body>
 </html>
